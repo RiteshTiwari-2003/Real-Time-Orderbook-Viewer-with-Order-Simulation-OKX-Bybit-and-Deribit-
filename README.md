@@ -313,3 +313,105 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 Built with ❤️ for GoQuant technical assessment
+
+## 🚀 Deploying to Vercel
+
+### Prerequisites
+- GitHub account (you already have this since your code is on GitHub)
+- Vercel account (free to sign up)
+
+### Step-by-Step Deployment Guide
+
+1. **Sign Up for Vercel**
+   - Go to [Vercel.com](https://vercel.com)
+   - Click on "Sign Up" in the top right corner
+   - Choose "Sign up with GitHub" (recommended)
+   - Grant Vercel access to your GitHub repositories
+
+2. **Import Your Project**
+   - After signing up, you'll be redirected to the Vercel dashboard
+   - Click on the "+" button in the top left corner
+   - Select "Import Project"
+   - Click on "Continue with GitHub"
+   - Find your repository ("Real-Time-Orderbook-Viewer-with-Order-Simulation-OKX-Bybit-and-Deribit-")
+   - Click "Deploy"
+
+3. **Configure Deployment Settings**
+   - Vercel will automatically detect your Next.js project
+   - It will use the following settings from your package.json:
+     - Build command: `next build`
+     - Start command: `next start`
+   - If prompted, keep these default settings
+
+4. **Wait for Deployment**
+   - Vercel will:
+     1. Clone your repository
+     2. Install dependencies
+     3. Build your project
+     4. Deploy to production
+   - This process typically takes 2-3 minutes
+
+5. **Access Your Website**
+   - Once deployment is complete, Vercel will provide a deployment URL
+   - The URL will look like: `https://your-project-name.vercel.app`
+   - Click on the URL to view your live website
+
+6. **Automatic Deployment**
+   - Vercel will automatically deploy new versions whenever you push to your main branch
+   - No manual intervention needed for future updates
+
+7. **Custom Domain (Optional)**
+   - If you want to use a custom domain:
+     1. Go to your project settings in Vercel
+     2. Click on "Domains"
+     3. Add your custom domain
+     4. Follow Vercel's DNS setup instructions
+
+8. **Environment Variables**
+   - If your project requires environment variables:
+     1. Go to your project settings
+     2. Click on "Environment Variables"
+     3. Add your variables under "Production"
+
+### Troubleshooting Tips
+
+1. **Build Errors**
+   - Check the deployment logs in Vercel dashboard
+   - Common issues:
+     - Missing dependencies
+     - Incorrect build settings
+     - TypeScript errors
+
+2. **Performance Issues**
+   - Use Vercel's "Performance" tab to monitor:
+     - Page load times
+     - Build times
+     - API performance
+
+3. **Accessing Logs**
+   - Go to your project in Vercel
+   - Click on "Logs"
+   - View both build logs and runtime logs
+
+### Best Practices
+
+1. **Commit Messages**
+   - Use clear commit messages for better deployment tracking
+   - Example: "fix: resolve build error in orderbook component"
+
+2. **Branch Management**
+   - Keep your main branch clean and stable
+   - Use feature branches for development
+   - Only merge to main when ready for production
+
+3. **Monitoring**
+   - Use Vercel's analytics to monitor:
+     - Page views
+     - Error rates
+     - Load times
+
+### Additional Resources
+
+- [Vercel Documentation](https://vercel.com/docs)
+- [Vercel Support](https://vercel.com/support)
+- [Next.js on Vercel](https://nextjs.org/docs/deployment)
