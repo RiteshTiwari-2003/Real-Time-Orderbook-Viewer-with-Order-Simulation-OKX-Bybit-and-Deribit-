@@ -2,6 +2,137 @@
 
 A sophisticated real-time cryptocurrency orderbook viewer with advanced order simulation capabilities. This application provides traders with comprehensive market depth analysis, order impact visualization, and multi-venue comparison tools.
 
+## 📚 Project Overview
+
+This application is a modern, real-time trading tool built using Next.js 13+ and TypeScript. It provides traders with:
+- Real-time orderbook visualization from multiple exchanges (OKX, Bybit, Deribit)
+- Advanced order simulation capabilities
+- Comprehensive market depth analysis
+- Interactive trading interface optimized for both desktop and mobile
+- Professional-grade trading UI with dark theme
+
+## 🔧 Core Technologies & Libraries
+
+### Frontend Framework
+- **Next.js 13+**: Full-stack React framework with App Router for optimal performance
+- **TypeScript**: For type safety and better development experience
+- **Tailwind CSS**: For utility-first styling with custom trading-focused design system
+
+### UI Components & Styling
+- **Radix UI**: Accessible, unstyled component primitives
+- **shadcn/ui**: Beautiful, customizable components built on Radix UI
+- **TailwindCSS**: Utility-first CSS framework
+- **sonner**: Toast notifications for user feedback
+- **lucide-react**: Icon library for consistent UI elements
+
+### Data Visualization
+- **recharts**: Advanced charting library for market depth visualization
+- **react-day-picker**: For date/time selection in order simulation
+
+### State Management & Forms
+- **react-hook-form**: For form handling and validation
+- **@hookform/resolvers**: For Zod integration with form validation
+- **zod**: Schema validation and type safety
+
+### Layout & Responsiveness
+- **react-resizable-panels**: For flexible layout management
+- **clsx**: For conditional class names
+- **tailwind-merge**: For utility class merging
+- **tailwindcss-animate**: For smooth animations
+
+### Development Tools
+- **ESLint**: For code linting and style enforcement
+- **PostCSS**: For CSS processing
+- **Autoprefixer**: For CSS vendor prefixing
+
+### Date & Time Handling
+- **date-fns**: For robust date manipulation and formatting
+
+### Interactive Elements
+- **embla-carousel-react**: For interactive market data visualization
+- **input-otp**: For secure input handling
+- **cmdk**: For command palette functionality
+- **vaul**: For modal and overlay components
+
+### UI Components (Radix UI)
+- **@radix-ui/react-accordion**: For collapsible content
+- **@radix-ui/react-alert-dialog**: For alert notifications
+- **@radix-ui/react-aspect-ratio**: For maintaining aspect ratios
+- **@radix-ui/react-avatar**: For user avatars
+- **@radix-ui/react-checkbox**: For form inputs
+- **@radix-ui/react-collapsible**: For collapsible sections
+- **@radix-ui/react-context-menu**: For right-click menus
+- **@radix-ui/react-dialog**: For modal dialogs
+- **@radix-ui/react-dropdown-menu**: For dropdown selections
+- **@radix-ui/react-hover-card**: For interactive tooltips
+- **@radix-ui/react-label**: For form labels
+- **@radix-ui/react-menubar**: For navigation menus
+- **@radix-ui/react-navigation-menu**: For navigation
+- **@radix-ui/react-popover**: For pop-up content
+- **@radix-ui/react-progress**: For progress indicators
+- **@radix-ui/react-radio-group**: For radio button groups
+- **@radix-ui/react-scroll-area**: For scrollable content
+- **@radix-ui/react-select**: For dropdown selections
+- **@radix-ui/react-separator**: For visual separation
+- **@radix-ui/react-slider**: For range inputs
+- **@radix-ui/react-slot**: For component composition
+- **@radix-ui/react-switch**: For toggle switches
+- **@radix-ui/react-tabs**: For tabbed navigation
+- **@radix-ui/react-toast**: For notifications
+- **@radix-ui/react-toggle**: For toggle buttons
+- **@radix-ui/react-toggle-group**: For grouped toggles
+- **@radix-ui/react-tooltip**: For tooltips
+
+## 📋 Assumptions
+
+1. **Development Environment**
+   - Node.js 18+ is installed
+   - npm or yarn is available
+   - Development is done in a TypeScript environment
+
+2. **API Integration**
+   - Exchanges provide stable WebSocket APIs
+   - Rate limits are consistent across exchanges
+   - API endpoints remain stable between versions
+
+3. **User Experience**
+   - Users are familiar with trading concepts
+   - Users have basic understanding of cryptocurrency markets
+   - Users have access to modern web browsers
+
+## 📖 API Documentation References
+
+### Exchange APIs
+- [OKX API Documentation](https://www.okx.com/docs-v5)
+- [Bybit API Documentation](https://bybit-exchange.github.io/docs/v5)
+- [Deribit API Documentation](https://docs.deribit.com/v2)
+
+### Library Documentation
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Radix UI Documentation](https://www.radix-ui.com/docs)
+- [Recharts Documentation](https://recharts.org/en-US)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+## ⚠️ Rate Limiting Considerations
+
+### Exchange Rate Limits
+- **OKX**: ~20 requests/second for public endpoints
+- **Bybit**: ~20 requests/second for public endpoints
+- **Deribit**: ~20 requests/second for public endpoints
+
+### Implementation Details
+- WebSocket connections are preferred over REST for real-time data
+- Rate limiting is handled at the exchange level
+- The application implements exponential backoff for connection retries
+- Mock data is used in development to avoid rate limiting issues
+
+### Best Practices
+- Use WebSocket connections for real-time data
+- Implement proper error handling for rate limit errors
+- Use batch requests where possible
+- Implement caching for frequently accessed data
+- Monitor API usage and adjust accordingly
+
 ## 🚀 Features
 
 ### Core Functionality
